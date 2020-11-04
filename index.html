@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Pagina de javascript</title>
+		<link rel="stylesheet" href="css/main.css">
+		<!--<link rel="text/javascript" href="js/main.js">-->
+	</head>
+	<body class="is-preload">
+			<div id="wrapper">
+			<h1 align="center" style="color: blue">Formulario de suma con javascript</h1>		
+							</section>
+					</section>
+
+					<div id="main">
+							<article class="post">
+<div align="center">
+
+<input type="" name="campo 1" id="Numero1"><br>
+<input type="" name="campo 2" id="Numero2"><br>
+<input type="" name="campo 3" id="Numero3"><br>
+<input type="" name="campo 4" id="Numero4"><br>
+<input type="" name="campo 5" id="Numero5"><br>
+<br>
+<input type="button" name="botón" value="sumar" onclick="Suma();">
+<input type="button" name="botón" value="limpiar" onclick="limpiar();" >
+<br>
+<br>
+
+
+<script type="text/javascript">
+function Suma(){
+var num1=parseInt(document.getElementById('Numero1').value);
+var num2=parseInt(document.getElementById('Numero2').value);
+var num3=parseInt(document.getElementById('Numero3').value);
+var num4=parseInt(document.getElementById('Numero4').value);
+var num5=parseInt(document.getElementById('Numero5').value);
+var resultado;
+resultado= num1+num2+num3+num4+num5;
+alert(+resultado);
+}
+
+function limpiar(){
+document.getElementById("Numero1").value= "" 
+document.getElementById("Numero2").value= "" 
+document.getElementById("Numero3").value= "" 
+document.getElementById("Numero4").value= "" 
+document.getElementById("Numero5").value= "" 
+}
+</script>
+
+</div>
+							</article>
+				</div>	
+	</body>
+</html>
+
+<!-- 
+a.	Todo lo solicitado referente a estilos, debe estar en una hoja de estilo externa a la página y ubicada en una carpeta denominada "CSS" A
+b.	La página debe ser responsive y soportar una correcta visualización en diferentes dispositivos. ej. Celular A
+c.	Debe contar con un título ubicado en el encabezado de la página (Letras Azules y Fondo Gris) A
+d.	El cuerpo de la página debe tener el fondo color Amarillo. A 
+e.	La página debe permitir el ingreso de 5 números, cada uno en un campo independiente de un formulario. A
+f.	El formulario debe contar con un botón que diga "sumar", que al ser presionado realice la suma de los números ingresados y muestre el resultado en la página. A
+g.	debe existir otro botón para limpiar datos y comenzar nuevamente la carga. A
+Finalizado el trabajo se debe subir a un hosting gratuito, enviar la url adjunta a esta y dar por completada la tarea.
+-->
